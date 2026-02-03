@@ -408,6 +408,7 @@ function ProductCard({
             background: isPrimary
               ? "linear-gradient(90deg, transparent, #fbbf24, #f97316, #fbbf24, transparent)"
               : "linear-gradient(90deg, transparent, rgba(180, 83, 9, 0.5), transparent)",
+            backgroundSize: "200% 100%",
           }}
           animate={
             isPrimary
@@ -418,7 +419,6 @@ function ProductCard({
               : {}
           }
           transition={{ duration: 3, repeat: Infinity }}
-          style={{ backgroundSize: "200% 100%" }}
         />
 
         <div
@@ -617,7 +617,6 @@ function ProductCard({
               fontWeight: 700,
               fontSize: 15,
               cursor: "pointer",
-              border: "none",
               background: isPrimary
                 ? "linear-gradient(135deg, #f59e0b, #ea580c)"
                 : "transparent",
